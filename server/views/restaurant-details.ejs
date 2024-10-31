@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Travel Guide</title>
+    <link rel="stylesheet" href="/tour.css"/>
+    <link rel="stylesheet" href="/restaurant-details-styles.css"/>
+    <link rel="icon" type="image/png" href="images/icon.svg">
+
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+        <div class="restaurant-details">
+            
+            <div>
+                <h1><%=restaurant.name %></h1>
+                <p><%=restaurant.phone%></p>
+                <p><%= restaurant.address %></p>
+               <img src="<%= restaurant.photo %>" alt="<%= restaurant.name %> Photo">
+            </div>
+        </div>
+
+
+    <footer></footer>
+    <script src="/scripts/header.js"></script>
+</body>
+
+</html>
