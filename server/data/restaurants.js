@@ -26,6 +26,14 @@ const createRestaurant = async (newRestaurnat) => {
 
 };
 
+// Getting reviews from Restaurant 
+const getReviewsForRestaurant = async (id) => {
+    const result = await pool.query('SELECT * FROM reviews WHERE restaurant_id = $1', [id]);
+    return result.rows;
+    }
+
+
+
 const updateRestaurant = async (id, data) => {
     // Fetch the current restaurant data
     const restaurant = await pool.query('SELECT * FROM restaurants WHERE id = $1', [id]);

@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
 // rendering the restaurantCards
 function renderRestaurantCards(restaurants) {
     const container = document.querySelector('.container');
